@@ -1,0 +1,28 @@
+body{
+  font-family: "Gill Sans";
+}
+
+h2{
+  text-align: center;
+}
+
+form{
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+ul{
+  list-style: none;
+}
+
+input{
+  float: right;
+}
+
+button{
+  color: white;
+  background-color: #6C63FF;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+}
