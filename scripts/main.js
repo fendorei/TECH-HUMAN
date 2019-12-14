@@ -8,11 +8,6 @@ let answer7 = document.getElementsByName('answer7')
 let answer8 = document.getElementsByName('answer8')
 let answer9 = document.getElementsByName('answer9')
 let answer10 = document.getElementsByName('answer10')
-let answer11 = document.getElementsByName('answer11')
-let answer12 = document.getElementsByName('answer12')
-let answer13 = document.getElementsByName('answer13')
-let answer14 = document.getElementsByName('answer14')
-let answer15 = document.getElementsByName('answer15')
 let result = 0
 
 function checkResult() {
@@ -76,35 +71,39 @@ function checkResult() {
       break
     }
   }
-  for (let i = 0; i < answer11.length; i++) {
-    if (answer11[i].checked) {
-      result = result + parseInt(answer11[i].value)
-      break
-    }
+  result = (result / 22) * 50
+  let queryString = "?para1=" + result
+  window.location.href = 'pages/results.html' + queryString
+}
+
+function showResults() {
+  let queryString = decodeURIComponent(window.location.search)
+  queryString = queryString.substring(1)
+  let queries = queryString.split("=");
+  let score = queries[1]
+  document.getElementById("score").textContent = "Votre score est de " + score + "%"
+  switch (true) {
+    case (score < 20):
+      document.getElementById("class").textContent = "Fretin"
+      document.getElementById("advice").textContent = "Vous n'êtes pas dépendant aux micro-transaction%0DSi vous connaissez quelqu'un ou si vous voulez en savoir plus sur l'adiction aux micro-transactions et ces risque, nous vous invitons consulter nos conseils afin de pouvoir prévenir de la dépendance."
+      break;
+    case (score >= 20 && score < 40):
+      document.getElementById("class").textContent = "Thon"
+      document.getElementById("advice").textContent = "Vous êtes susceptible d'être dépendant aux micro-transaction%0DAfin de pouvoir continuer à rester maitre de votre jeu, nous vous conseillons de consulter nos conseils afin de pouvoir éviter tout risque de dépendances."
+      break;
+    case (score >= 40 && score < 60):
+      document.getElementById("class").textContent = "Dauphin"
+      document.getElementById("advice").textContent = "Vous êtes susceptible d'être dépendant aux micro-transaction%0DAfin de pouvoir continuer à rester maitre de votre jeu, nous vous conseillons de consulter nos conseils afin de pouvoir éviter tout risque de dépendances."
+      break;
+    case (score >= 60 && score < 80):
+      document.getElementById("class").textContent = "Béluga"
+      document.getElementById("advice").textContent = "Vous semblez être dépendant des micro-transaction%0DPour combattre votre addiction, nous vous suggérons fortement de consultez nos conseils afin de retrouver le contrôle."
+      break;
+    case (score >= 80):
+      document.getElementById("class").textContent = "Baleine"
+      document.getElementById("advice").textContent = "Vous semblez être dépendant des micro-transaction%0DPour combattre votre addiction, nous vous suggérons fortement de consultez nos conseils afin de retrouver le contrôle."
+      break;
+    default:
+      document.write("Votre résultat n'a pas pu être chargé")
   }
-  for (let i = 0; i < answer12.length; i++) {
-    if (answer12[i].checked) {
-      result = result + parseInt(answer12[i].value)
-      break
-    }
-  }
-  for (let i = 0; i < answer13.length; i++) {
-    if (answer13[i].checked) {
-      result = result + parseInt(answer13[i].value)
-      break
-    }
-  }
-  for (let i = 0; i < answer14.length; i++) {
-    if (answer14[i].checked) {
-      result = result + parseInt(answer14[i].value)
-      break
-    }
-  }
-  for (let i = 0; i < answer15.length; i++) {
-    if (answer15[i].checked) {
-      result = result + parseInt(answer15[i].value)
-      break
-    }
-  }
-  console.log((result / 6) * 10)
 }

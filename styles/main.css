@@ -4,6 +4,8 @@ body{
 
 h2{
   text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 form{
@@ -25,4 +27,7 @@ button{
   border: none;
   border-radius: 20px;
   padding: 15px;
+  font-family: "Bauhaus";
+  font-size: 15px;
+  margin: 10px;
 }
