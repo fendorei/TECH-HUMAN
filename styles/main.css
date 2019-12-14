@@ -31,3 +31,14 @@ button{
   font-size: 15px;
   margin: 10px;
 }
+
+#myProgress {
+  width: 20%;
+  border: solid 1px;
+}
+
+#myBar {
+  width: 0%;
+  height: 10px;
+  background-color: green;
+}
