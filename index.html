@@ -1,298 +1,70 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Quiz</title>
-    <meta name="quiz" content="test d'addiction aux microtransactions">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Microtransaction</title>
     <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body onload="showQuestion()">
-    <div class="question">
-      <h2>Jouez-vous à des jeux proposant des achats intégrés?</h2>
-      <form class="" action="index.html" method="post">
-        <ul>
-          <li>
-            <label for="question">Non</label>
-            <input type="radio" name="answer1" value="0">
-          </li>
-          <li>
-            <label for="question">Rarement</label>
-            <input type="radio" name="answer1" value="1">
-          </li>
-          <li>
-            <label for="question">Parfois</label>
-            <input type="radio" name="answer1" value="2">
-          </li>
-          <li>
-            <label for="question">Souvent</label>
-            <input type="radio" name="answer1" value="3">
-          </li>
-          <li>
-            <label for="question">Oui</label>
-            <input type="radio" name="answer1" value="4">
-        </ul>
-      </form>
-      <div style="text-align:center;">
-        <button type="submit" onclick="checkResult(answer1, 0)">Suivante</button>
-      </div>
-    </div>
-    <div class="question">
-      <h2>Jouez-vous plus a des jeux solo ou a des jeux multijoueur?</h2>
-      <form class="" action="index.html" method="post">
-        <ul>
-          <li>
-            <label for="question">Solo</label>
-            <input type="radio" name="answer2" value="0">
-          </li>
-          <li>
-            <label for="question">Multijoueur</label>
-            <input type="radio" name="answer2" value="1">
-          </li>
-        </ul>
-      </form>
-      <div style="text-align:center;">
-        <button type="submit" onclick="checkResult(answer2, 1)">Suivante</button>
-      </div>
-    </div>
-    <div class="question">
-      <h2>Dans un jeu, est-ce les graphismes ou le gameplay qui vous importe le plus ?</h2>
-      <form class="" action="index.html" method="post">
-        <ul>
-          <li>
-            <label for="question">Les graphismes</label>
-            <input type="radio" name="answer3" value="0">
-          </li>
-          <li>
-            <label for="question">Le gameplay</label>
-            <input type="radio" name="answer3" value="1">
-          </li>
-        </ul>
-      </form>
-      <div style="text-align:center;">
-        <button type="submit" onclick="checkResult(answer3, 2)">Suivante</button>
-      </div>
-    </div>
-    <div class="question">
-      <h2>Quel est votre âge?</h2>
-      <form class="" action="index.html" method="post">
-        <ul>
-          <li>
-            <label for="question">Moins de 12</label>
-            <input type="radio" name="answer4" value="0">
-          </li>
-          <li>
-            <label for="question">12-17</label>
-            <input type="radio" name="answer4" value="1">
-          </li>
-          <li>
-            <label for="question">18-39</label>
-            <input type="radio" name="answer4" value="2">
-          </li>
-          <li>
-            <label for="question">40-66</label>
-            <input type="radio" name="answer4" value="3">
-          </li>
-          <li>
-            <label for="question">66+</label>
-            <input type="radio" name="answer4" value="4">
-        </ul>
-      </form>
-      <div style="text-align:center;">
-        <button type="submit" onclick="checkResult(answer4, 3)">Suivante</button>
-      </div>
-    </div>
-    <div class="question">
-      <h2>Pour monter de niveau, vous gagner l'expérience ou vous en achetez avec de l'argent réel ?</h2>
-      <form class="" action="index.html" method="post">
-        <ul>
-          <li>
-            <label for="question">Gagnez de l'expérience</label>
-            <input type="radio" name="answer5" value="0">
-          </li>
-          <li>
-            <label for="question">Achat</label>
-            <input type="radio" name="answer5" value="1">
-          </li>
-        </ul>
-      </form>
-      <div style="text-align:center;">
-        <button type="submit" onclick="checkResult(answer5, 4)">Suivante</button>
-      </div>
-    </div>
-    <div class="question">
-      <h2>Vous arrive-t'il de dépensez plus d'argent que prévu et si oui combien?</h2>
-      <form class="" action="index.html" method="post">
-        <ul>
-          <li>
-            <label for="question">Non</label>
-            <input type="radio" name="answer6" value="0">
-          </li>
-          <li>
-            <label for="question">Moins de 5€</label>
-            <input type="radio" name="answer6" value="1">
-          </li>
-          <li>
-            <label for="question">Moins de 20€</label>
-            <input type="radio" name="answer6" value="2">
-          </li>
-          <li>
-            <label for="question">Moins de 50€</label>
-            <input type="radio" name="answer6" value="3">
-          </li>
-          <li>
-            <label for="question">Plus de 50€</label>
-            <input type="radio" name="answer6" value="4">
-        </ul>
-      </form>
-      <div style="text-align:center;">
-        <button type="submit" onclick="checkResult(answer6, 5)">Suivante</button>
-      </div>
-    </div>
-    <div class="question">
-      <h2>Vous arrive t-il d’emprunter de l’argent pour acheter des bonus ?</h2>
-      <form class="" action="index.html" method="post">
-        <ul>
-          <li>
-            <label for="question">Jamais</label>
-            <input type="radio" name="answer7" value="0">
-          </li>
-          <li>
-            <label for="question">Rarement</label>
-            <input type="radio" name="answer7" value="1">
-          </li>
-          <li>
-            <label for="question">Parfois</label>
-            <input type="radio" name="answer7" value="2">
-          </li>
-          <li>
-            <label for="question">Souvent</label>
-            <input type="radio" name="answer7" value="3">
-          </li>
-          <li>
-            <label for="question">Presque toujours</label>
-            <input type="radio" name="answer7" value="4">
-        </ul>
-      </form>
-      <div style="text-align:center;">
-        <button type="submit" onclick="checkResult(answer7, 6)">Suivante</button>
-      </div>
-    </div>
-    <div class="question">
-      <h2>Quand un proche vous demande combien vous avez dépensé dans les microtransactions, quelles sommes donnez-vous?</h2>
-      <form class="" action="index.html" method="post">
-        <ul>
-          <li>
-            <label for="question">Aucune</label>
-            <input type="radio" name="answer8" value="0">
-          </li>
-          <li>
-            <label for="question">Moins de 5€</label>
-            <input type="radio" name="answer8" value="1">
-          </li>
-          <li>
-            <label for="question">Moins de 20€</label>
-            <input type="radio" name="answer8" value="2">
-          </li>
-          <li>
-            <label for="question">Moins de 50€</label>
-            <input type="radio" name="answer8" value="3">
-          </li>
-          <li>
-            <label for="question">Plus de 50€</label>
-            <input type="radio" name="answer8" value="4">
-        </ul>
-      </form>
-      <div style="text-align:center;">
-        <button type="submit" onclick="checkResult(answer8, 7)">Suivante</button>
-      </div>
-    </div>
-    <div class="question">
-      <h2>Passez-vous beaucoup de temps à penser à vos achat dans le jeu?</h2>
-      <form class="" action="index.html" method="post">
-        <ul>
-          <li>
-            <label for="question">Jamais</label>
-            <input type="radio" name="answer9" value="0">
-          </li>
-          <li>
-            <label for="question">Rarement</label>
-            <input type="radio" name="answer9" value="1">
-          </li>
-          <li>
-            <label for="question">Parfois</label>
-            <input type="radio" name="answer9" value="2">
-          </li>
-          <li>
-            <label for="question">Souvent</label>
-            <input type="radio" name="answer9" value="3">
-          </li>
-          <li>
-            <label for="question">Presque toujours</label>
-            <input type="radio" name="answer9" value="4">
-        </ul>
-      </form>
-      <div style="text-align:center;">
-        <button type="submit" onclick="checkResult(answer9, 8)">Suivante</button>
-      </div>
-    </div>
-    <div class="question">
-      <h2>Vos pratiques de microtransactions ont-elles posés des problèmes professionnels, scolaires ou intimes?</h2>
-      <form class="" action="index.html" method="post">
-        <ul>
-          <li>
-            <label for="question">Jamais</label>
-            <input type="radio" name="answer10" value="0">
-          </li>
-          <li>
-            <label for="question">Rarement</label>
-            <input type="radio" name="answer10" value="1">
-          </li>
-          <li>
-            <label for="question">Parfois</label>
-            <input type="radio" name="answer10" value="2">
-          </li>
-          <li>
-            <label for="question">Souvent</label>
-            <input type="radio" name="answer10" value="3">
-          </li>
-          <li>
-            <label for="question">Presque toujours</label>
-            <input type="radio" name="answer10" value="4">
-        </ul>
-      </form>
-      <div style="text-align:center;">
-        <button type="submit" onclick="checkResult(answer10, 9)">Suivante</button>
-      </div>
-    </div>
-    <div class="question">
-      <h2>Vous sentez-vous anxieux.se, triste ou déprimé.e quand vous pensez a toutes les microtransactions que vous avez effectué?</h2>
-      <form class="" action="index.html" method="post">
-        <ul>
-          <li>
-            <label for="question">Jamais</label>
-            <input type="radio" name="answer11" value="0">
-          </li>
-          <li>
-            <label for="question">Rarement</label>
-            <input type="radio" name="answer11" value="1">
-          </li>
-          <li>
-            <label for="question">Parfois</label>
-            <input type="radio" name="answer11" value="2">
-          </li>
-          <li>
-            <label for="question">Souvent</label>
-            <input type="radio" name="answer11" value="3">
-          </li>
-          <li>
-            <label for="question">Presque toujours</label>
-            <input type="radio" name="answer11" value="4">
-        </ul>
-      </form>
-      <div style="text-align:center;">
-        <button type="submit" onclick="checkResult(answer11, 10)">Voir les résultats</button>
-      </div>
-    </div>
-    <script src="scripts/main.js"></script>
-  </body>
+</head>
+<body>
+
+ <header>
+   <nav>
+     <ul>
+       <div class="leftNav">
+          <li class="logoHeader"><a href="#"><img src="images/logoheader.png" alt=""></a></li>
+          <li class="nameCompany"><a href="#">Game Control</a></li>
+        </div>
+        <div class="centerNav"></div>
+        <div class="rightNav">
+          <li><a href="#">Infos</a></li>
+          <li><a href="#">Témoignages</a></li>
+          <li><a href="#">Test</a></li>
+        </div>
+     </ul>
+   </nav>
+ </header>
+
+
+
+ <div class="separationTest">
+   <div class="textTest">
+     <p class="Test-hight">Les jeux: passe-temps ou addictions couteuses?  </p>
+     <p  class="Test-medium">Tester votre dépendance aux microtransactions grâce à notre questionnaire</p>
+     <p  class="Test-down">Découvrez quel type de joueur vous êtes avec notre test!</p>
+     <div class="separationButton">
+     <div class="buttonTest">
+	     <a href="pages/quiz.html"><span class="colorButtonTest">Faire Le Test</span></a>
+	     <div class="mask"></div>
+     </div>
+     <div class="buttonDef">
+	     <a href="#"><span class="colorButtonDef">En Savoir Plus Sur La Microtransaction</span></a>
+	     <div class="mask"></div>
+     </div>
+   </div>
+   </div>
+
+   <div class="imageText">
+     <img src="images/undraw_quiz_nlyh.svg" alt=""class="sizeImage">
+   </div>
+
+
+ </div>
+
+ <footer>
+   <ul>
+
+      <li class="logoHeader"><a href="#"><img src="images/logo facebook.svg" alt=""></a></li>
+      <li class="logoHeader"><a href="#"><img src="images/insta.svg" alt=""></a></li>
+      <li class="logoHeader"><a href="#"><img src="images/twitter.svg" alt=""></a></li>
+
+   </ul>
+ </footer>
+
+
+ <script src="scripts/main.js"></script>
+
+
+</body>
 </html>

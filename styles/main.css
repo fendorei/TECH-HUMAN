@@ -1,48 +1,240 @@
 body{
-  font-family: "Gill Sans";
-}
+  font-family: "Gill Sans", arial;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
-h2{
-  text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
-}
 
-form{
-  padding-left: 30%;
-  padding-right: 30%;
-}
 
+}
+header{
+  background: #2C3484;
+  width:100%;
+  height: 7vw;
+
+  padding: 0;
+  margin-top: -2.7vh;
+}
 ul{
+  display: flex;
+  justify-content: space-around;
   list-style: none;
-}
 
-input{
-  float: right;
 }
+.leftNav{
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+    margin-left: 13vw;
+    align-items: center;
+    margin: auto;
 
-button{
+}
+.rightNav{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  align-items: center;
+  margin: auto;
+  margin-left: 14vw;
+    margin-top: 2.5vw;
+      font-size: 1.5vw;
+
+}
+.centerNav{
+width: 12%;
+background: #2C3484;
+height: 30%;
+}
+.logoHeader img{
+  height: 2vw;
+  margin-top: 1.4vw;
+}
+.nameCompany{
+  font-size: 3vw;
+  margin-left: 1vw;
+    font-family: "Gamer";
+      margin-top:1.4vw;
+
+}
+.leftNav a{
   color: white;
-  background-color: #6C63FF;
-  border: none;
-  border-radius: 20px;
-  padding: 15px;
-  font-family: "Bauhaus";
-  font-size: 15px;
-  margin: 10px;
+
+}
+a{
+text-decoration: none;
+}
+.rightNav a{
+  font-size: 1.5vw;
+    font-weight:  800;
+    color: #6C63FF;
+
 }
 
-#myProgress {
+.buttonTest{
+
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:2vw;
+	background:#6C63FF;
+   font-weight: 700;
+	color:#F8F8FC;
+  height: 2vw;
+  width: 12vw;
+  position: relative;
+}
+.colorButtonTest{
+  color: white;
+  position: absolute;
+  margin-top: 2.1%;
+  font-size: 1.2vw;
+  margin-left: 15%;
+  font-family: "Gamer";
+
+}
+.colorButtonDef{
+  color: white;
+  position: absolute;
+  margin-top: 1%;
+  font-size: 1.2vw;
+  margin-left: 9%;
+  font-family: "Gamer";
+
+}
+.separationTest{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7vw;
+
+}
+.textTest{
+ width: 48%;
+ margin-left: 7.3%;
+ margin-top: -3.95vw;
+}
+.imageTest{
   width: 20%;
-  border: solid 1px;
 }
 
-#myBar {
-  width: 0%;
-  height: 10px;
-  background-color: green;
+ .sizeImage {
+  width: 40vw;
 }
+.Test-hight{
 
-.question {
-  display: none;
+  font-size: 2.8vw;
+  font-weight: 1000;
+    color: #6C63FF;
+
+}
+.Test-medium {
+
+  font-size: 1.9vw;
+  color: #7B7D91;
+  font-weight: 1000;
+  margin-top: -0.7vw;
+
+}
+.Test-down{
+
+  font-size: 1vw;
+  color: #9EA0BC;
+  font-weight: 1000;
+    margin-top: 1.7vw;
+
+}
+.buttonDef{
+  border:none;
+  padding:6px 0 6px 0;
+  border-radius:2vw;
+  background:red;
+  font-weight: 700;
+  color:#F8F8FC;
+  height: 2vw;
+  width: 31vw;
+  position: relative;
+  margin-left: 4vw;
+}
+.separationButton{
+  justify-content: space-around;
+  display: inline-flex;
+    margin-top: 1.7vw;
+}
+footer{
+  background: #2C3484;
+  width:100%;
+  height: 7vw;
+}
+footer ul{
+  width: 30%;
+    margin-left: 2.9vw;
+}
+@media only screen and (min-width : 18px) and (max-width : 1024px){
+  header{
+    background: #2C3484;
+    width:100%;
+    height: 7vw;
+
+    padding: 0;
+    margin-top: -2.7vh;
+  }
+  ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+  }
+  .leftNav{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+      margin-left: 13vw;
+      align-items: center;
+      margin: auto;
+
+  }
+  .rightNav{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    align-items: center;
+    margin: auto;
+    margin-left: 14vw;
+      margin-top: 2.5vw;
+        font-size: 1.5vw;
+
+  }
+  .centerNav{
+  width: 12%;
+  background: #2C3484;
+  height: 30%;
+  }
+  .logoHeader img{
+    height: 2vw;
+    margin-top: 1.4vw;
+  }
+  .nameCompany{
+    font-size: 3vw;
+    margin-left: 1vw;
+      font-family: "Gamer";
+        margin-top:1.4vw;
+
+  }
+  .leftNav a{
+    color: white;
+
+  }
+  a{
+  text-decoration: none;
+  }
+  .rightNav a{
+    font-size: 1.5vw;
+      font-weight:  800;
+      color: #6C63FF;
+      display:none;
+
+  }
+
 }
