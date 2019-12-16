@@ -6,7 +6,8 @@
     <meta name="quiz" content="test d'addiction aux microtransactions">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
+  <body onload="showQuestion()">
+    <div class="question">
       <h2>Jouez-vous à des jeux proposant des achats intégrés?</h2>
       <form class="" action="index.html" method="post">
         <ul>
@@ -31,6 +32,11 @@
             <input type="radio" name="answer1" value="4">
         </ul>
       </form>
+      <div style="text-align:center;">
+        <button type="submit" onclick="checkResult(answer1, 0)">Suivante</button>
+      </div>
+    </div>
+    <div class="question">
       <h2>Jouez-vous plus a des jeux solo ou a des jeux multijoueur?</h2>
       <form class="" action="index.html" method="post">
         <ul>
@@ -44,6 +50,11 @@
           </li>
         </ul>
       </form>
+      <div style="text-align:center;">
+        <button type="submit" onclick="checkResult(answer2, 1)">Suivante</button>
+      </div>
+    </div>
+    <div class="question">
       <h2>Dans un jeu, est-ce les graphismes ou le gameplay qui vous importe le plus ?</h2>
       <form class="" action="index.html" method="post">
         <ul>
@@ -57,6 +68,11 @@
           </li>
         </ul>
       </form>
+      <div style="text-align:center;">
+        <button type="submit" onclick="checkResult(answer3, 2)">Suivante</button>
+      </div>
+    </div>
+    <div class="question">
       <h2>Quel est votre âge?</h2>
       <form class="" action="index.html" method="post">
         <ul>
@@ -81,6 +97,11 @@
             <input type="radio" name="answer4" value="4">
         </ul>
       </form>
+      <div style="text-align:center;">
+        <button type="submit" onclick="checkResult(answer4, 3)">Suivante</button>
+      </div>
+    </div>
+    <div class="question">
       <h2>Pour monter de niveau, vous gagner l'expérience ou vous en achetez avec de l'argent réel ?</h2>
       <form class="" action="index.html" method="post">
         <ul>
@@ -94,6 +115,11 @@
           </li>
         </ul>
       </form>
+      <div style="text-align:center;">
+        <button type="submit" onclick="checkResult(answer5, 4)">Suivante</button>
+      </div>
+    </div>
+    <div class="question">
       <h2>Vous arrive-t'il de dépensez plus d'argent que prévu et si oui combien?</h2>
       <form class="" action="index.html" method="post">
         <ul>
@@ -118,6 +144,11 @@
             <input type="radio" name="answer6" value="4">
         </ul>
       </form>
+      <div style="text-align:center;">
+        <button type="submit" onclick="checkResult(answer6, 5)">Suivante</button>
+      </div>
+    </div>
+    <div class="question">
       <h2>Vous arrive t-il d’emprunter de l’argent pour acheter des bonus ?</h2>
       <form class="" action="index.html" method="post">
         <ul>
@@ -142,6 +173,11 @@
             <input type="radio" name="answer7" value="4">
         </ul>
       </form>
+      <div style="text-align:center;">
+        <button type="submit" onclick="checkResult(answer7, 6)">Suivante</button>
+      </div>
+    </div>
+    <div class="question">
       <h2>Quand un proche vous demande combien vous avez dépensé dans les microtransactions, quelles sommes donnez-vous?</h2>
       <form class="" action="index.html" method="post">
         <ul>
@@ -166,6 +202,11 @@
             <input type="radio" name="answer8" value="4">
         </ul>
       </form>
+      <div style="text-align:center;">
+        <button type="submit" onclick="checkResult(answer8, 7)">Suivante</button>
+      </div>
+    </div>
+    <div class="question">
       <h2>Passez-vous beaucoup de temps à penser à vos achat dans le jeu?</h2>
       <form class="" action="index.html" method="post">
         <ul>
@@ -190,6 +231,11 @@
             <input type="radio" name="answer9" value="4">
         </ul>
       </form>
+      <div style="text-align:center;">
+        <button type="submit" onclick="checkResult(answer9, 8)">Suivante</button>
+      </div>
+    </div>
+    <div class="question">
       <h2>Vos pratiques de microtransactions ont-elles posés des problèmes professionnels, scolaires ou intimes?</h2>
       <form class="" action="index.html" method="post">
         <ul>
@@ -214,33 +260,39 @@
             <input type="radio" name="answer10" value="4">
         </ul>
       </form>
+      <div style="text-align:center;">
+        <button type="submit" onclick="checkResult(answer10, 9)">Suivante</button>
+      </div>
+    </div>
+    <div class="question">
       <h2>Vous sentez-vous anxieux.se, triste ou déprimé.e quand vous pensez a toutes les microtransactions que vous avez effectué?</h2>
       <form class="" action="index.html" method="post">
         <ul>
           <li>
             <label for="question">Jamais</label>
-            <input type="radio" name="answer10" value="0">
+            <input type="radio" name="answer11" value="0">
           </li>
           <li>
             <label for="question">Rarement</label>
-            <input type="radio" name="answer10" value="1">
+            <input type="radio" name="answer11" value="1">
           </li>
           <li>
             <label for="question">Parfois</label>
-            <input type="radio" name="answer10" value="2">
+            <input type="radio" name="answer11" value="2">
           </li>
           <li>
             <label for="question">Souvent</label>
-            <input type="radio" name="answer10" value="3">
+            <input type="radio" name="answer11" value="3">
           </li>
           <li>
             <label for="question">Presque toujours</label>
-            <input type="radio" name="answer10" value="4">
+            <input type="radio" name="answer11" value="4">
         </ul>
       </form>
       <div style="text-align:center;">
-        <button type="submit" onclick="checkResult()">Voir les résultats</button>
+        <button type="submit" onclick="checkResult(answer11, 10)">Voir les résultats</button>
       </div>
-      <script src="scripts/main.js"></script>
+    </div>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

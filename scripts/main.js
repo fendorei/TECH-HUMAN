@@ -8,72 +8,29 @@ let answer7 = document.getElementsByName('answer7')
 let answer8 = document.getElementsByName('answer8')
 let answer9 = document.getElementsByName('answer9')
 let answer10 = document.getElementsByName('answer10')
+let answer11 = document.getElementsByName('answer11')
+let question = document.getElementsByClassName('question')
 let result = 0
 
-function checkResult() {
-  for (let i = 0; i < answer1.length; i++) {
-    if (answer1[i].checked) {
-      result = result + parseInt(answer1[i].value)
+function showQuestion() {
+  question[0].style.display = "contents"
+}
+
+function checkResult(answer, j) {
+  for (let i = 0; i < answer.length; i++) {
+    if (answer[i].checked) {
+      result = result + parseInt(answer[i].value)
       break
     }
   }
-  for (let i = 0; i < answer2.length; i++) {
-    if (answer2[i].checked) {
-      result = result + parseInt(answer2[i].value)
-      break
-    }
+  if (answer == answer11) {
+    result = (result / 22) * 50
+    let queryString = "?para1=" + result
+    window.location.href = 'pages/results.html' + queryString
+  } else {
+    question[j].style.display = "none"
+    question[j + 1].style.display = "contents"
   }
-  for (let i = 0; i < answer3.length; i++) {
-    if (answer3[i].checked) {
-      result = result + parseInt(answer3[i].value)
-      break
-    }
-  }
-  for (let i = 0; i < answer4.length; i++) {
-    if (answer4[i].checked) {
-      result = result + parseInt(answer4[i].value)
-      break
-    }
-  }
-  for (let i = 0; i < answer5.length; i++) {
-    if (answer5[i].checked) {
-      result = result + parseInt(answer5[i].value)
-      break
-    }
-  }
-  for (let i = 0; i < answer6.length; i++) {
-    if (answer6[i].checked) {
-      result = result + parseInt(answer6[i].value)
-      break
-    }
-  }
-  for (let i = 0; i < answer7.length; i++) {
-    if (answer7[i].checked) {
-      result = result + parseInt(answer7[i].value)
-      break
-    }
-  }
-  for (let i = 0; i < answer8.length; i++) {
-    if (answer8[i].checked) {
-      result = result + parseInt(answer8[i].value)
-      break
-    }
-  }
-  for (let i = 0; i < answer9.length; i++) {
-    if (answer9[i].checked) {
-      result = result + parseInt(answer9[i].value)
-      break
-    }
-  }
-  for (let i = 0; i < answer10.length; i++) {
-    if (answer10[i].checked) {
-      result = result + parseInt(answer10[i].value)
-      break
-    }
-  }
-  result = (result / 22) * 50
-  let queryString = "?para1=" + result
-  window.location.href = 'pages/results.html' + queryString
 }
 
 function showResults() {
