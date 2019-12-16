@@ -166,18 +166,19 @@ footer{
 }
 footer ul{
   width: 30%;
-    margin-left: 2.9vw;
+  margin-left: 2.9vw;
 }
 
 h2{
   text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #6C63FF;
 }
 
 form{
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 ul{
@@ -212,7 +213,16 @@ button{
 
 .question {
   display: none;
-  width: 50%;
+  font-size: 25px;
+}
+
+main{
+  margin: 5%;
+}
+
+p{
+  font-size: 20px;
+  color: #7B7D91;
 }
 
 @media only screen and (min-width : 18px) and (max-width : 1024px){
