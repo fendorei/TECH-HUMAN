@@ -6,32 +6,27 @@ body{
   margin: 0;
   overflow-y: hidden;
   overflow-x: hidden;
-
-
-
 }
 header{
   background: #2C3484;
   width:100%;
   height: 7vw;
-
   padding: 0;
   margin-top: -2.7vh;
 }
-ul{
+
+.sections{
   display: flex;
   justify-content: space-around;
   list-style: none;
-
 }
 .leftNav{
   display: flex;
   justify-content: space-around;
   width: 35%;
-    margin-left: 13vw;
-    align-items: center;
-    margin: auto;
-
+  margin-left: 13vw;
+  align-items: center;
+  margin: auto;
 }
 .rightNav{
   display: flex;
@@ -40,8 +35,8 @@ ul{
   align-items: center;
   margin: auto;
   margin-left: 14vw;
-    margin-top: 2.5vw;
-      font-size: 1.5vw;
+  margin-top: 2.5vw;
+  font-size: 1.5vw;
 
 }
 .centerNav{
@@ -173,6 +168,53 @@ footer ul{
   width: 30%;
     margin-left: 2.9vw;
 }
+
+h2{
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+form{
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+ul{
+  list-style: none;
+}
+
+input{
+  float: right;
+}
+
+button{
+  color: white;
+  background-color: #6C63FF;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  font-family: "Bauhaus";
+  font-size: 15px;
+  margin: 10px;
+}
+
+#myProgress {
+  width: 20%;
+  border: solid 1px;
+}
+
+#myBar {
+  width: 0%;
+  height: 10px;
+  background-color: green;
+}
+
+.question {
+  display: none;
+  width: 50%;
+}
+
 @media only screen and (min-width : 18px) and (max-width : 1024px){
   header{
     background: #2C3484;
