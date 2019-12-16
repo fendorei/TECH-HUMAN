@@ -21,6 +21,8 @@ function checkResult(answer, j) {
     if (answer[i].checked) {
       result = result + parseInt(answer[i].value)
       break
+    } else if (i == answer.length - 1) {
+      return;
     }
   }
   if (answer == answer11) {
