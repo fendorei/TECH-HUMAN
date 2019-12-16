@@ -234,12 +234,7 @@ p{
     padding: 0;
     margin-top: -2.7vh;
   }
-  ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
 
-  }
   .leftNav{
     display: flex;
     justify-content: space-around;
@@ -261,9 +256,9 @@ p{
 
   }
   .centerNav{
-  width: 12%;
-  background: #2C3484;
-  height: 30%;
+    width: 12%;
+    background: #2C3484;
+    height: 30%;
   }
   .logoHeader img{
     height: 2vw;
@@ -272,23 +267,42 @@ p{
   .nameCompany{
     font-size: 3vw;
     margin-left: 1vw;
-      font-family: "Gamer";
-        margin-top:1.4vw;
-
+    font-family: "Gamer";
+    margin-top:1.4vw;
   }
   .leftNav a{
     color: white;
-
   }
   a{
-  text-decoration: none;
+    text-decoration: none;
   }
   .rightNav a{
     font-size: 1.5vw;
-      font-weight:  800;
-      color: #6C63FF;
-      display:none;
+    font-weight:  800;
+    color: #6C63FF;
+    display:none;
+  }
+}
 
+@media only screen and (max-height : 414px) {
+  h2{
+    font-size: 65%;
   }
 
+  label{
+    font-size: 50%;
+  }
+
+  button{
+    margin: 0;
+    padding: 10px;
+  }
+
+  h1{
+    font-size: 100%;
+  }
+
+  p{
+    font-size: 100%;
+  }
 }
