@@ -10,6 +10,7 @@ let answer9 = document.getElementsByName('answer9')
 let answer10 = document.getElementsByName('answer10')
 let answer11 = document.getElementsByName('answer11')
 let question = document.getElementsByClassName('question')
+let picture = document.getElementsByClassName('imageText')
 let result = 0
 
 function showQuestion() {
@@ -48,6 +49,7 @@ function showResults() {
       document.getElementById("advice1").textContent = "Vous n'êtes pas dépendant aux micro-transactions"
       document.getElementById("advice2").textContent = "Si vous connaissez quelqu'un ou si vous voulez en savoir plus sur l'adiction aux micro-transactions et ces risque, nous vous invitons consulter nos conseils afin de pouvoir prévenir de la dépendance."
       document.getElementById("myBar").style.backgroundColor = "green"
+      document.getElementById('fish').src = "../images/undraw_fish_bowl_uu88.png"
       break;
     case (score >= 20 && score < 40):
       document.getElementById("class").textContent = "Thon"
@@ -60,6 +62,7 @@ function showResults() {
       document.getElementById("advice1").textContent = "Vous êtes susceptible d'être dépendant aux micro-transactions"
       document.getElementById("advice2").textContent = "Afin de pouvoir continuer à rester maitre de votre jeu, nous vous conseillons de consulter nos conseils afin de pouvoir éviter tout risque de dépendances."
       document.getElementById("myBar").style.backgroundColor = "yellow"
+      document.getElementById('fish').src = "../images/dauphin bleu.png"
       break;
     case (score >= 60 && score < 80):
       document.getElementById("class").textContent = "Béluga"
@@ -72,6 +75,7 @@ function showResults() {
       document.getElementById("advice1").textContent = "Vous semblez être dépendant des micro-transactions"
       document.getElementById("advice2").textContent = "Pour combattre votre addiction, nous vous suggérons fortement de consultez nos conseils afin de retrouver le contrôle."
       document.getElementById("myBar").style.backgroundColor = "red"
+      document.getElementById('fish').src = "../images/baleine.png"
       break;
     default:
       document.write("Votre résultat n'a pas pu être chargé")

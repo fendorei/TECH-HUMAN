@@ -114,7 +114,7 @@ text-decoration: none;
   width: 20%;
 }
 
- .sizeImage {
+.sizeImage {
   width: 40vw;
 }
 .Test-hight{
@@ -223,6 +223,15 @@ main{
 p{
   font-size: 20px;
   color: #7B7D91;
+}
+
+.fish{
+  width: 10px;
+}
+
+.result{
+  display: flex;
+  flex-direction: row;
 }
 
 @media only screen and (min-width : 18px) and (max-width : 1024px){
