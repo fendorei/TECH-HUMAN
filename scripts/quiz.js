@@ -46,33 +46,33 @@ function showResults() {
   switch (true) {
     case (score < 20):
       document.getElementById("class").textContent = "Fretin"
-      document.getElementById("advice1").textContent = "Vous n'êtes pas dépendant aux micro-transactions"
-      document.getElementById("advice2").textContent = "Si vous connaissez quelqu'un ou si vous voulez en savoir plus sur l'adiction aux micro-transactions et ces risque, nous vous invitons consulter nos conseils afin de pouvoir prévenir de la dépendance."
+      document.getElementById("advice1").textContent = "Vous n'êtes pas dépendant aux microtransactions"
+      document.getElementById("advice2").textContent = "Si vous connaissez quelqu'un ou si vous voulez en savoir plus sur l'adiction aux microtransactions et ces risque, nous vous invitons consulter nos conseils afin de pouvoir prévenir de la dépendance."
       document.getElementById("myBar").style.backgroundColor = "green"
       document.getElementById('fish').src = "../images/undraw_fish_bowl_uu88.png"
       break;
     case (score >= 20 && score < 40):
       document.getElementById("class").textContent = "Thon"
-      document.getElementById("advice1").textContent = "Vous êtes susceptible d'être dépendant aux micro-transactions"
+      document.getElementById("advice1").textContent = "Vous êtes susceptible d'être dépendant aux microtransactions"
       document.getElementById("advice2").textContent = "Afin de pouvoir continuer à rester maitre de votre jeu, nous vous conseillons de consulter nos conseils afin de pouvoir éviter tout risque de dépendances."
       document.getElementById("myBar").style.backgroundColor = "lightgreen"
       break;
     case (score >= 40 && score < 60):
       document.getElementById("class").textContent = "Dauphin"
-      document.getElementById("advice1").textContent = "Vous êtes susceptible d'être dépendant aux micro-transactions"
+      document.getElementById("advice1").textContent = "Vous êtes susceptible d'être dépendant aux microtransactions"
       document.getElementById("advice2").textContent = "Afin de pouvoir continuer à rester maitre de votre jeu, nous vous conseillons de consulter nos conseils afin de pouvoir éviter tout risque de dépendances."
       document.getElementById("myBar").style.backgroundColor = "yellow"
       document.getElementById('fish').src = "../images/dauphin bleu.png"
       break;
     case (score >= 60 && score < 80):
       document.getElementById("class").textContent = "Béluga"
-      document.getElementById("advice1").textContent = "Vous semblez être dépendant des micro-transactions"
+      document.getElementById("advice1").textContent = "Vous semblez être dépendant des microtransactions"
       document.getElementById("advice2").textContent = "Pour combattre votre addiction, nous vous suggérons fortement de consultez nos conseils afin de retrouver le contrôle."
       document.getElementById("myBar").style.backgroundColor = "orange"
       break;
     case (score >= 80):
       document.getElementById("class").textContent = "Baleine"
-      document.getElementById("advice1").textContent = "Vous semblez être dépendant des micro-transactions"
+      document.getElementById("advice1").textContent = "Vous semblez être dépendant des microtransactions"
       document.getElementById("advice2").textContent = "Pour combattre votre addiction, nous vous suggérons fortement de consultez nos conseils afin de retrouver le contrôle."
       document.getElementById("myBar").style.backgroundColor = "red"
       document.getElementById('fish').src = "../images/baleine.png"
