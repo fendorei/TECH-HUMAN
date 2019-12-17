@@ -40,9 +40,9 @@ header{
 
 }
 .centerNav{
-width: 12%;
-background: #2C3484;
-height: 30%;
+  width: 12%;
+  background: #2C3484;
+  height: 30%;
 }
 .logoHeader img{
   height: 2vw;
@@ -51,8 +51,8 @@ height: 30%;
 .nameCompany{
   font-size: 3vw;
   margin-left: 1vw;
-    font-family: "Gamer";
-      margin-top:1.4vw;
+  font-family: "Gamer";
+  margin-top:1.4vw;
 
 }
 .leftNav a{
@@ -60,22 +60,20 @@ height: 30%;
 
 }
 a{
-text-decoration: none;
+  text-decoration: none;
 }
 .rightNav a{
   font-size: 1.5vw;
-    font-weight:  800;
-    color: #6C63FF;
-
+  font-weight:  800;
+  color: #6C63FF;
 }
 
 .buttonTest{
-
 	border:none;
 	padding:6px 0 6px 0;
 	border-radius:2vw;
 	background:#6C63FF;
-   font-weight: 700;
+  font-weight: 700;
 	color:#F8F8FC;
   height: 2vw;
   width: 12vw;
@@ -121,7 +119,7 @@ text-decoration: none;
 
   font-size: 2.8vw;
   font-weight: 1000;
-    color: #6C63FF;
+  color: #6C63FF;
 
 }
 .Test-medium {
@@ -137,7 +135,7 @@ text-decoration: none;
   font-size: 1vw;
   color: #9EA0BC;
   font-weight: 1000;
-    margin-top: 1.7vw;
+  margin-top: 1.7vw;
 
 }
 .buttonDef{
@@ -155,7 +153,7 @@ text-decoration: none;
 .separationButton{
   justify-content: space-around;
   display: inline-flex;
-    margin-top: 1.7vw;
+  margin-top: 1.7vw;
 }
 footer{
   background: #2C3484;
@@ -217,7 +215,10 @@ button{
 }
 
 main{
-  margin: 5%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 5%;
 }
 
 p{
@@ -226,7 +227,9 @@ p{
 }
 
 #fish{
-  width: 100%;
+  margin-top: 20%;
+  margin-left: 20%;
+  width: 75%;
 }
 
 .result{
@@ -235,7 +238,7 @@ p{
 }
 
 .text{
-  width: 50%;
+  width: 75%;
 }
 
 @media only screen and (min-width : 18px) and (max-width : 1024px){
@@ -243,7 +246,6 @@ p{
     background: #2C3484;
     width:100%;
     height: 7vw;
-
     padding: 0;
     margin-top: -2.7vh;
   }
@@ -252,9 +254,9 @@ p{
     display: flex;
     justify-content: space-around;
     width: 35%;
-      margin-left: 13vw;
-      align-items: center;
-      margin: auto;
+    margin-left: 13vw;
+    align-items: center;
+    margin: auto;
 
   }
   .rightNav{
@@ -264,8 +266,8 @@ p{
     align-items: center;
     margin: auto;
     margin-left: 14vw;
-      margin-top: 2.5vw;
-        font-size: 1.5vw;
+    margin-top: 2.5vw;
+    font-size: 1.5vw;
 
   }
   .centerNav{
@@ -312,10 +314,14 @@ p{
   }
 
   h1{
-    font-size: 100%;
+    font-size: 75%;
   }
 
   p{
-    font-size: 100%;
+    font-size: 75%;
+  }
+
+  #fish{
+    margin-top: 10%;
   }
 }
