@@ -62,7 +62,7 @@ a{
 }
 .rightNav a{
   font-size: 1.5vw;
-  font-weight:  800;
+  font-weight: 800;
   color: #6C63FF;
 }
 
@@ -140,13 +140,14 @@ a{
   border:none;
   padding:6px 0 6px 0;
   border-radius:2vw;
-  background:red;
+  background: #9189FF;
   font-weight: 700;
   color:#F8F8FC;
   height: 2vw;
   width: 31vw;
   position: relative;
   margin-left: 4vw;
+  opacity: 75%;
 }
 .separationButton{
   justify-content: space-around;
@@ -249,29 +250,58 @@ p{
   margin: 10px;
 }
 
-.types{
-  width: 50%;
-  padding-top: 50px;
-}
-
-.types h2{
-  text-align: center;
-}
-
 .advice{
   width: 60%;
-  margin-left: 5%;
+  margin-left: 20%;
+  margin-right: 0;
 }
 
 .quizlustration{
-  width: 15%;
+  width: 12%;
   position: absolute;
-  margin-left: 35%;
+  margin-left: 37%;
 }
 
 .short{
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+
+.advice p{
+  font-size: 20px;
+}
+
+.advice div{
   margin-top: 10%;
   margin-bottom: 10%;
+}
+
+#advice-img1{
+  float: left;
+  width: 25%;
+}
+
+#advice-img2{
+  float: right;
+  width: 25%;
+}
+
+#advice-img3{
+  float: left;
+  width: 25%;
+}
+
+#advice-img4{
+  float: right;
+  width: 25%;
+}
+
+h3{
+  text-align: center;
+}
+
+hr{
+  color: #9189FF;
 }
 
 @media only screen and (min-width : 18px) and (max-width : 1024px){
