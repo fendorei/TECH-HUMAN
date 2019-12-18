@@ -163,7 +163,7 @@ footer ul{
   margin-left: 2.9vw;
 }
 
-#question h2{
+h2{
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
@@ -256,6 +256,22 @@ p{
 
 .types h2{
   text-align: center;
+}
+
+.advice{
+  width: 60%;
+  margin-left: 5%;
+}
+
+.quizlustration{
+  width: 15%;
+  position: absolute;
+  margin-left: 35%;
+}
+
+.short{
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 @media only screen and (min-width : 18px) and (max-width : 1024px){

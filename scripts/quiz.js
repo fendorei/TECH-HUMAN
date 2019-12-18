@@ -69,6 +69,7 @@ function showResults() {
       document.getElementById("advice1").textContent = "Vous semblez être dépendant des microtransactions"
       document.getElementById("advice2").textContent = "Pour combattre votre addiction, nous vous suggérons fortement de consultez nos conseils afin de retrouver le contrôle."
       document.getElementById("myBar").style.backgroundColor = "orange"
+      document.getElementById('fish').src = "../images/béluga.png"
       break;
     case (score >= 80):
       document.getElementById("class").textContent = "Baleine"
@@ -80,4 +81,20 @@ function showResults() {
     default:
       document.write("Votre résultat n'a pas pu être chargé")
   }
+}
+
+function giveAdvice() {
+  let queryString = decodeURIComponent(window.location.search)
+  queryString = queryString.substring(1)
+  let queries = queryString.split("=")
+  let score = queries[1]
+  queryString = "?para1=" + score
+  window.location.href = 'results.html' + queryString
+}
+
+function showAdvice() {
+  let queryString = decodeURIComponent(window.location.search)
+  queryString = queryString.substring(1)
+  let queries = queryString.split("=")
+  let score = queries[1]
 }
