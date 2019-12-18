@@ -269,6 +269,7 @@ p{
 
 .advice p{
   font-size: 20px;
+  color: #7B7D91;
 }
 
 .advice div{
@@ -302,6 +303,33 @@ h3{
 
 hr{
   color: #9189FF;
+}
+
+.types p{
+  width: 50%;
+}
+
+.types h2{
+  width: 25%;
+}
+
+.heading{
+  color: #7B7D91;
+}
+
+.heading h1{
+  color: #6C63FF;
+}
+
+.types img{
+  float: right;
+  width: 15%;
+  margin-top: 5%;
+  margin-right: 10%;
+}
+
+.types div{
+  margin-top: 10%;
 }
 
 @media only screen and (min-width : 18px) and (max-width : 1024px){
