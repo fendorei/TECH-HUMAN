@@ -362,7 +362,6 @@ hr{
 .block{
   background-color: #585ec7;
   width: 50%;
-  height: 25%;
   padding: 2%;
   border-radius: 10%;
 }
@@ -481,6 +480,14 @@ hr{
     margin-left: 12%;
     width: 75%;
   }
+
+  .types p{
+    font-size: 70%;
+  }
+
+  .types h2{
+    font-size: 70%;
+  }
 }
 
 @media only screen and (max-height : 414px) {
@@ -516,5 +523,13 @@ hr{
     position: absolute;
     margin-left: 33%;
     margin-top: 3%;
+  }
+
+  .types p{
+    font-size: 100%;
+  }
+
+  .types h2{
+    font-size: 100%;
   }
 }
