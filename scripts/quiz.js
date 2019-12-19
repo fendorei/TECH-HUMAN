@@ -193,3 +193,12 @@ function showAdvice() {
       document.write("Vos conseils n'ont pas pu être chargé")
   }
 }
+
+function showTestimonies() {
+  let testimonies = document.getElementById("testimonies")
+  if (testimonies.style.display == "contents") {
+    testimonies.style.display = "none"
+  } else {
+    testimonies.style.display = "contents"
+  }
+}

@@ -366,6 +366,38 @@ hr{
   border-radius: 10%;
 }
 
+.beginning h1{
+  color: #6C63FF;
+  margin-top: 10%;
+}
+
+.beginning p{
+  color: #7B7D91;
+  width: 50%;
+  margin-bottom: 25%;
+}
+
+.controller{
+  float: right;
+  width: 35%;
+  margin-right: 5%;
+}
+
+h4{
+  text-align: center;
+}
+
+.arrow{
+  display: block;
+  width: 8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#testimonies{
+  display: none;
+}
+
 @media only screen and (min-width : 18px) and (max-width : 1024px){
   header{
     background: #2C3484;
