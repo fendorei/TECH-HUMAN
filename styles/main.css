@@ -4,8 +4,6 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 header{
   background: #2C3484;
@@ -152,6 +150,9 @@ footer{
   background: #2C3484;
   width:100%;
   height: 7vw;
+  position: relative;
+  bottom: 0;
+  margin-top: 8.25%;
 }
 footer ul{
   width: 30%;
@@ -228,7 +229,7 @@ main{
 }
 
 p{
-  font-size: 25px;
+  font-size: 150%;
 }
 
 #advice1{
@@ -239,10 +240,14 @@ p{
   color: #9EA0BC
 }
 
+.fish{
+  width: 50%;
+}
+
 #fish{
-  margin-top: 20%;
-  margin-left: 20%;
-  width: 75%;
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 90%;
 }
 
 .result{
@@ -251,12 +256,16 @@ p{
 }
 
 .text{
-  width: 75%;
+  width: 50%;
 }
 
 .heading{
   text-align: center;
   margin: 10px;
+}
+
+.heading img{
+  width: 35%;
 }
 
 .advice{
@@ -277,7 +286,7 @@ p{
 }
 
 .advice p{
-  font-size: 20px;
+  font-size: 125%;
   color: #7B7D91;
 }
 
@@ -314,12 +323,18 @@ hr{
   color: #9189FF;
 }
 
+.types{
+  display: flex;
+  flex-direction: column;
+  align: center;
+}
+
 .types p{
-  width: 50%;
+  color: white;
 }
 
 .types h2{
-  width: 25%;
+  color: white;
 }
 
 .heading{
@@ -333,12 +348,23 @@ hr{
 .types img{
   float: right;
   width: 15%;
-  margin-top: 5%;
   margin-right: 10%;
+  background-color: #45467e;
+  padding: 5%;
+  border-radius: 10%;
 }
 
-.types div{
+.micro{
   margin-top: 10%;
+  height: 20%;
+}
+
+.block{
+  background-color: #585ec7;
+  width: 50%;
+  height: 25%;
+  padding: 2%;
+  border-radius: 10%;
 }
 
 @media only screen and (min-width : 18px) and (max-width : 1024px){
@@ -357,7 +383,6 @@ hr{
     margin-left: 13vw;
     align-items: center;
     margin: auto;
-
   }
   .rightNav{
     display: flex;
@@ -368,7 +393,6 @@ hr{
     margin-left: 14vw;
     margin-top: 2.5vw;
     font-size: 1.5vw;
-
   }
   .centerNav{
     width: 12%;
@@ -397,6 +421,66 @@ hr{
     color: #6C63FF;
     display:none;
   }
+
+  h2{
+    font-size: 75%;
+  }
+
+  label{
+    font-size: 75%;
+  }
+
+  form{
+    padding-left: 0%;
+    padding-right: 10%;
+  }
+
+  .quizlustration{
+    width: 20%;
+    position: absolute;
+    margin-left: 37%;
+  }
+
+  h1{
+    font-size: 100%;
+  }
+
+  p{
+    font-size: 80%;
+  }
+
+  button{
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  #fish{
+    margin-top: 10%;
+    margin-left: 0%;
+    width: 120%;
+  }
+
+  .text{
+    width: 45%;
+  }
+
+  h3{
+    font-size: 75%;
+  }
+
+  .advice p{
+    font-size: 75%;
+  }
+
+  .advice div{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .advice{
+    margin-left: 12%;
+    width: 75%;
+  }
 }
 
 @media only screen and (max-height : 414px) {
@@ -423,5 +507,14 @@ hr{
 
   #fish{
     margin-top: 10%;
+    margin-left: 20%;
+    width: 75%;
+  }
+
+  .quizlustration{
+    width: 20%;
+    position: absolute;
+    margin-left: 33%;
+    margin-top: 3%;
   }
 }
