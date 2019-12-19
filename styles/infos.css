@@ -4,13 +4,12 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 header{
   background: #2C3484;
   width:100%;
   height: 7vw;
+
   padding: 0;
   margin-top: -2.7vh;
 }
@@ -24,9 +23,10 @@ ul{
   display: flex;
   justify-content: space-around;
   width: 39%;
-  margin-left: 30vw;
-  align-items: center;
-  margin: auto;
+    margin-left: 30vw;
+    align-items: center;
+    margin: auto;
+
 }
 .rightNav{
   display: flex;
@@ -35,13 +35,14 @@ ul{
   align-items: center;
   margin: auto;
   margin-left: -1vw;
-  margin-top: 2.5vw;
-  font-size: 1.5vw;
+    margin-top: 2.5vw;
+      font-size: 1.5vw;
+
 }
 .centerNav{
-  width: 12%;
-  background: #2C3484;
-  height: 10%;
+width: 12%;
+background: #2C3484;
+height: 10%;
 }
 .logoHeader img{
   height: 2vw;
@@ -51,37 +52,39 @@ ul{
 .nameCompany{
   font-size: 3vw;
   margin-left: 1vw;
-  font-family: "Gamer";
-  margin-top:1.4vw;
-}
+    font-family: "Gamer";
+      margin-top:1.4vw;
 
+}
 .leftNav a{
   color: white;
-}
 
+}
 a{
-  text-decoration: none;
+text-decoration: none;
 }
-
 .rightNav a{
   font-size: 1.5vw;
-  font-weight:  500;
-  color: #6C63FF;
+    font-weight:  500;
+    color: #6C63FF;
+
 }
 
 .buttonTest{
+
   border:none;
   padding:6px 0 6px 0;
   border-radius:3vw;
   background:#6C63FF;
-  font-weight: 700;
+   font-weight: 700;
   color:#F8F8FC;
   height: 4vw;
   width: 20vw;
   position: relative;
-  top: 0vw;
-}
 
+top: 0vw;
+
+}
 .colorButtonTest{
   color: white;
   position: absolute;
@@ -89,8 +92,8 @@ a{
   font-size: 2.3vw;
   margin-left: 9%;
   font-family: "Gamer";
-}
 
+}
 .buttonDef{
   border:none;
   padding:6px 0 6px 0;
@@ -102,10 +105,12 @@ a{
   width: 28vw;
   position: relative;
   margin-left: -2vw;
-  top: 1vw;
-  left: 2.6vw;
-}
 
+  top: 1vw;
+
+  left: 2.6vw;
+
+}
 .colorButtonDef{
   color: white;
   position: absolute;
@@ -113,20 +118,19 @@ a{
   font-size: 1.2vw;
   margin-left: 3.7%;
   font-family: "Gamer";
-}
 
+}
 .separationTest{
   display: flex;
   justify-content: space-around;
   margin-top: 5vw;
-}
 
+}
 .textTest{
  width: 48%;
  margin-left: 7.3%;
  margin-top: -3.95vw;
 }
-
 .imageTest{
   width: 20%;
 }
@@ -134,56 +138,131 @@ a{
  .sizeImage {
   width: 40vw;
 }
-
 .Test-hight{
+
   font-size: 2.8vw;
   font-weight: 1000;
-  color: #6C63FF;
-}
+    color: #6C63FF;
 
+}
 .Test-medium {
+
   font-size: 1.9vw;
   color: #7B7D91;
   font-weight: 1000;
   margin-top: -0.7vw;
-}
 
+}
 .Test-down{
+
   font-size: 1vw;
   color: #9EA0BC;
   font-weight: 1000;
-  margin-top: 1.7vw;
+    margin-top: 1.7vw;
+
 }
 
 .separationButton{
   justify-content: space-around;
   display: inline-flex;
-  margin-top: 1.7vw;
+    margin-top: 1.7vw;
 }
-
 footer{
   background: #2C3484;
-  width: 100%;
+  width:100%;
   height: 5vw;
   margin-top: 4vw;
-  position: absolute;
+  position: relative;
   bottom: 0;
   margin: 0 auto;
-}
 
+
+}
 footer ul{
   width: 30%;
-  margin-left: 2.9vw;
-  margin: 0 auto;
-  position: absolute;
-}
+    margin-left: 2.9vw;
+    margin: 0 auto;
+    position: absolute;
 
+
+}
+footer li{
+
+
+}
 .menuForHamburger{
   display: none;
 }
+.menu
+{
+display: none;
+}
+/* ton code commmence ici */
+h2{
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #6C63FF;
+}
 
-.menu{
-  display: none;
+main{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+p{
+  font-size: 150%;
+}
+
+.heading{
+  text-align: center;
+  margin: 10px;
+  color: #7B7D91;
+}
+
+.heading img{
+  width: 35%;
+}
+
+.types{
+  display: flex;
+  flex-direction: column;
+  align: center;
+}
+
+.types p{
+  color: white;
+}
+
+.types h2{
+  color: white;
+}
+
+.heading h1{
+  color: #6C63FF;
+}
+
+.types img{
+  float: right;
+  width: 15%;
+  margin-right: 10%;
+  background-color: #45467e;
+  padding: 5%;
+  border-radius: 10%;
+}
+
+.micro{
+  margin-top: 10%;
+  height: 20%;
+}
+
+.block{
+  background-color: #585ec7;
+  width: 50%;
+  padding: 2%;
+  border-radius: 10%;
 }
 
 @media only screen and (min-width : 376px) and (max-width : 1024px){
@@ -191,25 +270,25 @@ footer ul{
     background: #2C3484;
     width:100%;
     height: 7vw;
+
     padding: 0;
     margin-top: -2.7vh;
   }
-
   ul{
     display: flex;
     justify-content: space-around;
     list-style: none;
-  }
 
+  }
   .leftNav{
     display: flex;
     justify-content: space-around;
     width: 35%;
-    margin-left: 13vw;
-    align-items: center;
-    margin: auto;
-  }
+      margin-left: 13vw;
+      align-items: center;
+      margin: auto;
 
+  }
   .rightNav{
     display: flex;
     justify-content: space-around;
@@ -217,63 +296,60 @@ footer ul{
     align-items: center;
     margin: auto;
     margin-left: 14vw;
-    margin-top: 2.5vw;
-    font-size: 1.5vw;
-  }
+      margin-top: 2.5vw;
+        font-size: 1.5vw;
 
+  }
   .centerNav{
-    width: 12%;
-    background: #2C3484;
-    height: 30%;
+  width: 12%;
+  background: #2C3484;
+  height: 30%;
   }
-
   .logoHeader img{
     height: 2vw;
     margin-top: 3.1vw;
   }
-
   .nameCompany{
     font-size: 3vw;
     margin-left: 1vw;
-    font-family: "Gamer";
-    margin-top:2.4vw;
-  }
+      font-family: "Gamer";
+        margin-top:2.4vw;
 
+  }
   .leftNav a{
     color: white;
-  }
 
+  }
   a{
-    text-decoration: none;
+  text-decoration: none;
   }
-
   .rightNav a{
     font-size: 1.5vw;
-    font-weight:  300;
-  }
+      font-weight:  300;
 
+  }
   .ciaoMenu{
     display:none;
   }
-
   .menuForHamburger{
     display:block;
     margin-left: 14.8vw;
     margin-top: -1vw;
   }
-
   .menuForHamburger a{
-    color:#F8F8FC;
-    font-family: "Gamer";
+color:#F8F8FC;
+  font-family: "Gamer";
     font-weight:  100;
-  }
 
+
+  }
   .buttonTest{
+
   	border:none;
   	padding:6px 0 6px 0;
   	border-radius:7vw;
   	background:#6C63FF;
-    font-weight: 700;
+     font-weight: 700;
   	color:#F8F8FC;
     height: 9vw;
     width: 27vw;
@@ -618,7 +694,7 @@ footer{
   width:100%;
   height: 5vw;
   margin-top: 4vw;
-  position: absolute;
+  position: relative;
   bottom: 0;
   margin: 0 auto;
 
@@ -674,7 +750,28 @@ footer ul{
 .hamburger.is-active .middle {
   width: 0;
 }
+/* ton code pour le responsive commence ici*/
+  h2{
+    font-size: 75%;
+  }
+
+  h1{
+    font-size: 100%;
+  }
+
+  p{
+    font-size: 80%;
+  }
+
+  .types p{
+    font-size: 70%;
+  }
+
+  .types h2{
+    font-size: 70%;
+  }
 }
+
 @media only screen and (min-width : 18px) and (max-width : 375px){
   header{
     background: #2C3484;
@@ -1108,7 +1205,7 @@ footer{
   width:100%;
   height: 5vw;
   margin-top: 4vw;
-  position: absolute;
+  position: relative;
   bottom: 0;
   margin: 0 auto;
 
@@ -1163,4 +1260,26 @@ footer ul{
 
 .hamburger.is-active .middle {
   width: 0;
+}
+
+/*ton code POUR LE RESPONSIVE A PARTIR D ICI*/
+  h2{
+    font-size: 65%;
+  }
+
+  h1{
+    font-size: 75%;
+  }
+
+  p{
+    font-size: 75%;
+  }
+
+  .types p{
+    font-size: 100%;
+  }
+
+  .types h2{
+    font-size: 100%;
+  }
 }

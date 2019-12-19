@@ -4,9 +4,8 @@ body{
   height: 100%;
   padding: 0;
   margin: 0;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
+
 header{
   background: #2C3484;
   width:100%;
@@ -14,12 +13,13 @@ header{
   padding: 0;
   margin-top: -2.7vh;
 }
+
 ul{
   display: flex;
   justify-content: space-around;
   list-style: none;
-
 }
+
 .leftNav{
   display: flex;
   justify-content: space-around;
@@ -28,6 +28,7 @@ ul{
   align-items: center;
   margin: auto;
 }
+
 .rightNav{
   display: flex;
   justify-content: space-around;
@@ -38,11 +39,13 @@ ul{
   margin-top: 2.5vw;
   font-size: 1.5vw;
 }
+
 .centerNav{
   width: 12%;
   background: #2C3484;
   height: 10%;
 }
+
 .logoHeader img{
   height: 2vw;
   margin-top: 1.4vw;
@@ -89,8 +92,8 @@ a{
   font-size: 2.3vw;
   margin-left: 9%;
   font-family: "Gamer";
-}
 
+}
 .buttonDef{
   border:none;
   padding:6px 0 6px 0;
@@ -99,34 +102,35 @@ a{
   font-weight: 700;
   color:#F8F8FC;
   height: 2vw;
-  width: 28vw;
+  width: 30vw;
   position: relative;
-  margin-left: -2vw;
-  top: 1vw;
-  left: 2.6vw;
-}
+  margin-left: 4vw;
 
+  top: 6vw;
+
+  left: 2.6vw;
+
+}
 .colorButtonDef{
   color: white;
   position: absolute;
-  margin-top: 0.3%;
+  margin-top: 0.6%;
   font-size: 1.2vw;
-  margin-left: 3.7%;
+  margin-left: 7%;
   font-family: "Gamer";
-}
 
+}
 .separationTest{
   display: flex;
   justify-content: space-around;
   margin-top: 5vw;
-}
 
+}
 .textTest{
  width: 48%;
  margin-left: 7.3%;
  margin-top: -3.95vw;
 }
-
 .imageTest{
   width: 20%;
 }
@@ -134,56 +138,122 @@ a{
  .sizeImage {
   width: 40vw;
 }
-
 .Test-hight{
+
   font-size: 2.8vw;
   font-weight: 1000;
-  color: #6C63FF;
-}
+    color: #6C63FF;
 
+}
 .Test-medium {
+
   font-size: 1.9vw;
   color: #7B7D91;
   font-weight: 1000;
   margin-top: -0.7vw;
-}
 
+}
 .Test-down{
+
   font-size: 1vw;
   color: #9EA0BC;
   font-weight: 1000;
-  margin-top: 1.7vw;
+    margin-top: 1.7vw;
+
 }
 
 .separationButton{
   justify-content: space-around;
   display: inline-flex;
-  margin-top: 1.7vw;
+    margin-top: 1.7vw;
 }
-
 footer{
   background: #2C3484;
-  width: 100%;
+  width:100%;
   height: 5vw;
   margin-top: 4vw;
-  position: absolute;
+  position: relative;
   bottom: 0;
   margin: 0 auto;
-}
 
+
+}
 footer ul{
   width: 30%;
-  margin-left: 2.9vw;
-  margin: 0 auto;
-  position: absolute;
-}
+    margin-left: 2.9vw;
+    margin: 0 auto;
+    position: absolute;
 
+
+}
+footer li{
+
+
+}
 .menuForHamburger{
   display: none;
 }
+.menu
+{
+display: none;
+}
+/* ton code commmence ici */
+h2{
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #6C63FF;
+}
 
-.menu{
-  display: none;
+main{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+.advice{
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 0;
+}
+
+.advice p{
+  font-size: 125%;
+  color: #7B7D91;
+}
+
+.advice div{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#advice-img1{
+  float: left;
+  width: 25%;
+}
+
+#advice-img2{
+  float: right;
+  width: 25%;
+}
+
+#advice-img3{
+  float: left;
+  width: 25%;
+}
+
+#advice-img4{
+  float: right;
+  width: 25%;
+}
+
+h3{
+  text-align: center;
+}
+
+hr{
+  color: #9189FF;
 }
 
 @media only screen and (min-width : 376px) and (max-width : 1024px){
@@ -191,25 +261,25 @@ footer ul{
     background: #2C3484;
     width:100%;
     height: 7vw;
+
     padding: 0;
     margin-top: -2.7vh;
   }
-
   ul{
     display: flex;
     justify-content: space-around;
     list-style: none;
-  }
 
+  }
   .leftNav{
     display: flex;
     justify-content: space-around;
     width: 35%;
-    margin-left: 13vw;
-    align-items: center;
-    margin: auto;
-  }
+      margin-left: 13vw;
+      align-items: center;
+      margin: auto;
 
+  }
   .rightNav{
     display: flex;
     justify-content: space-around;
@@ -217,63 +287,60 @@ footer ul{
     align-items: center;
     margin: auto;
     margin-left: 14vw;
-    margin-top: 2.5vw;
-    font-size: 1.5vw;
-  }
+      margin-top: 2.5vw;
+        font-size: 1.5vw;
 
+  }
   .centerNav{
-    width: 12%;
-    background: #2C3484;
-    height: 30%;
+  width: 12%;
+  background: #2C3484;
+  height: 30%;
   }
-
   .logoHeader img{
     height: 2vw;
     margin-top: 3.1vw;
   }
-
   .nameCompany{
     font-size: 3vw;
     margin-left: 1vw;
-    font-family: "Gamer";
-    margin-top:2.4vw;
-  }
+      font-family: "Gamer";
+        margin-top:2.4vw;
 
+  }
   .leftNav a{
     color: white;
-  }
 
+  }
   a{
-    text-decoration: none;
+  text-decoration: none;
   }
-
   .rightNav a{
     font-size: 1.5vw;
-    font-weight:  300;
-  }
+      font-weight:  300;
 
+  }
   .ciaoMenu{
     display:none;
   }
-
   .menuForHamburger{
     display:block;
     margin-left: 14.8vw;
     margin-top: -1vw;
   }
-
   .menuForHamburger a{
-    color:#F8F8FC;
-    font-family: "Gamer";
+color:#F8F8FC;
+  font-family: "Gamer";
     font-weight:  100;
-  }
 
+
+  }
   .buttonTest{
+
   	border:none;
   	padding:6px 0 6px 0;
   	border-radius:7vw;
   	background:#6C63FF;
-    font-weight: 700;
+     font-weight: 700;
   	color:#F8F8FC;
     height: 9vw;
     width: 27vw;
@@ -618,7 +685,7 @@ footer{
   width:100%;
   height: 5vw;
   margin-top: 4vw;
-  position: absolute;
+  position: relative;
   bottom: 0;
   margin: 0 auto;
 
@@ -674,7 +741,30 @@ footer ul{
 .hamburger.is-active .middle {
   width: 0;
 }
+/* ton code pour le responsive commence ici*/
+  h2{
+    font-size: 75%;
+  }
+
+  h3{
+    font-size: 75%;
+  }
+
+  .advice p{
+    font-size: 75%;
+  }
+
+  .advice div{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .advice{
+    margin-left: 12%;
+    width: 75%;
+  }
 }
+
 @media only screen and (min-width : 18px) and (max-width : 375px){
   header{
     background: #2C3484;
@@ -1108,7 +1198,7 @@ footer{
   width:100%;
   height: 5vw;
   margin-top: 4vw;
-  position: absolute;
+  position: relative;
   bottom: 0;
   margin: 0 auto;
 
@@ -1163,4 +1253,14 @@ footer ul{
 
 .hamburger.is-active .middle {
   width: 0;
+}
+
+/*ton code POUR LE RESPONSIVE A PARTIR D ICI*/
+  h2{
+    font-size: 65%;
+  }
+
+  p{
+    font-size: 75%;
+  }
 }
