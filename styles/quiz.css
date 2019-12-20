@@ -217,7 +217,7 @@ form{
 
 .question ul{
   list-style: none;
-  display: flow;
+  display: flow-root;
 }
 
 input{
